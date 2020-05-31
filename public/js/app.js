@@ -15,7 +15,7 @@ weatherForm.addEventListener('submit', (e) => {
                 messageTwo.textContent= '';
             } else {
                 messageOne.textContent = 'Weather for ' + data.location;
-                messageTwo.textContent = data.description + '. It currently is ' + data.temperature + ' degrees. It feels like ' + data.feelslike + ' degrees';
+                messageTwo.textContent = data.description + '. It currently is ' + data.temperature + ' degrees. Humidity level ' + data.humidity + '%: it feels like ' + data.feelslike + ' degrees';
             }
         });
     }).catch((error) => {
